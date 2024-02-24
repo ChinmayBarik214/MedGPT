@@ -13,3 +13,60 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
+.chat-box {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 50px;
+    overflow-y: auto; /* gives this a separate scrollbar*/
+}
+.msg {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.msg p {
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background-color: var(--color-user-msg);
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+.msg p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, var(--color-user-msg) 0%, var(--color-user-msg) 50%, transparent 50%, transparent);
+}
+.msg p span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+.user-msg {
+    justify-content: flex-end;
+}
+.gpt-msg {
+    justify-content: flex-start;
+}
+.gpt-msg p {
+    background-color: var(--color-gpt-msg);
+    text-align: left;   
+}
+.msg.gpt-msg p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, var(--color-gpt-msg) 0%, var(--color-gpt-msg) 50%, transparent 50%, transparent);
+}

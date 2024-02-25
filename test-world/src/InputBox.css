@@ -1,6 +1,50 @@
-.chat-input {
-    position: relative;
+.input-area {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 60px;
-    background-color: #f0f0f0;
+    background-color: var(--color-input-bg);
+}
+@media (max-width: 1000px) {
+    .input-area {
+        padding: 0 10px;
+    }
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    height:200px;
+}
+.input-container .send-btn {
+    cursor: pointer;
+    font-size: 37.5px;
+    background-color: var(--color-send-btn-bg);
+    align-self: flex-end;
+    margin-left: calc(-37.5px);
+    border-radius: 8px;
+    padding: 8px;
+}
+#texttype {
+    width:200px;
+    position: absolute;
+    bottom:0;
+}
+.input-container .textarea {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-right: 37.5px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-input);
+    width: 100%;
+    min-height: 1rem;
+    resize: none;
 }

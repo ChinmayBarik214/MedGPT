@@ -5,9 +5,11 @@
 .chat-box {
     position: relative;
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     padding: 50px;
-    overflow-y: auto; /* gives this a separate scrollbar*/
+    overflow: hidden;
+    /* gives this a separate scrollbar*/
+    /* overflow-y: auto;  */
 }
 .msg {
     position: relative;
@@ -23,7 +25,7 @@
     padding: 12px;
     background-color: var(--color-user-msg);
     border-radius: 2px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 .msg p::before {
     content: '';
@@ -37,7 +39,7 @@
 .msg p span {
     display: block;
     margin-top: 5px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     opacity: 0.5;
 }
 .user-msg {

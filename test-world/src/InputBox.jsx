@@ -5,7 +5,7 @@ import SendIcon from '@mui/icons-material/Send';
 function InputBox() {
     const textareaRef = useRef(null);
     const [textareaPaddingBottom, setTextareaPaddingBottom] = useState('34px');
-    const [textareaHeight, setTextareaHeight] = useState('auto');
+    const [textareaHeight, setTextareaHeight] = useState('56px');
 
     const handleTextareaChange = () => {
         const textarea = textareaRef.current;

@@ -4,20 +4,19 @@ import SendIcon from '@mui/icons-material/Send';
 
 function InputBox() {
     const textareaRef = useRef(null);
-    const [textareaHeight, setTextareaHeight] = useState('38px');
+    const [textareaPaddingBottom, setTextareaPaddingBottom] = useState('34px');
+    const [textareaHeight, setTextareaHeight] = useState('auto');
 
     const handleTextareaChange = () => {
         const textarea = textareaRef.current;
         if (textarea) {
-            textarea.style.height = '38px';
+            textarea.style.height = 'auto';
             textarea.style.height = textarea.scrollHeight + 'px';
+            textarea.style.paddingBottom = '17px'
             setTextareaHeight(textarea.style.height);
+            setTextareaPaddingBottom(textarea.style.paddingBottom)
         }
     };
-    // document.getElementById('texttype').addEventListener('keyup', function () {
-    //     this.style.height = 0;
-    //     this.style.height = this.scrollHeight + 'px';
-    // }, false)
     return (
     <div className='input-area'>
         {/* Chat input */}

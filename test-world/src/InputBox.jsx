@@ -5,12 +5,12 @@ import SendIcon from '@mui/icons-material/Send';
 
 function InputBox() {
     const textareaRef = useRef(null);
-    const [textareaHeight, setTextareaHeight] = useState('auto');
+    const [textareaHeight, setTextareaHeight] = useState('38px');
 
     const handleTextareaChange = () => {
         const textarea = textareaRef.current;
         if (textarea) {
-            textarea.style.height = 'auto';
+            textarea.style.height = '38px';
             textarea.style.height = textarea.scrollHeight + 'px';
             setTextareaHeight(textarea.style.height);
         }
@@ -24,14 +24,13 @@ function InputBox() {
         {/* Chat input */}
         <div className='input-container'>
         <textarea
+            rows={1}
             ref={textareaRef}
             placeholder='How are you feeling today?'
-            className='textarea'
-            id="texttype"
+            className='textarea texttype'
             style={{ height: textareaHeight }}
             onChange={handleTextareaChange}
         />
-        <SendIcon className='send-btn' />
         </div>
     </div>
   )

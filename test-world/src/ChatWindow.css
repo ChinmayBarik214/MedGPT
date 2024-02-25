@@ -5,8 +5,8 @@
 .chat-box {
     position: relative;
     width: 100%;
-    height: 100%;
-    padding: 50px;
+    height: calc(100vh - 60px);
+    padding: 0 30px;
     overflow: hidden;
     /* gives this a separate scrollbar*/
     /* overflow-y: auto;  */

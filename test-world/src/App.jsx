@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import ChatWindow from './ChatWindow';
+import InputBox from './InputBox';
 
 function App() {
   const [userMessage, setUserMessage] = useState('');
@@ -34,7 +35,11 @@ function App() {
 
   return (
     <div className="App">
+      {/* Make a header with the option to switch between light and dark mode */}
+      <div className='msgs-container'>
       <ChatWindow />
+      <InputBox />
+      </div>
       <h1>Chatbot API Tester</h1>
 
       <div>

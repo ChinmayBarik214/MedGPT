@@ -2,17 +2,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-.msgs-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1000px;
-    height: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-}
 .chat-box {
     position: relative;
     width: 100%;

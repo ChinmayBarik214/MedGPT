@@ -42,10 +42,12 @@
     border: 0.1px solid var(--color-input-border);
 }
 .send-btn {
+    width: 37px !important;
+    height: 37px !important;
     cursor: pointer;
     background-color: var(--color-send-btn-bg);
-    margin-left: -32.9px;
-    margin-top: 2.2px;
+    margin-left: -47px;
+    margin-bottom: 16px;
     border-radius: 4px;
     padding: 3.3px;
     z-index: 1;

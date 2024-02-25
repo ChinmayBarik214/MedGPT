@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './InputBox.css';
+import SendIcon from '@mui/icons-material/Send';
 
 function InputBox() {
     const textareaRef = useRef(null);
@@ -30,6 +31,8 @@ function InputBox() {
             onChange={handleTextareaChange}
         />
         </div>
+        {/* Send button */}
+        <SendIcon className='send-btn' />
     </div>
   )
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import ChatWindow from './ChatWindow';
 import InputBox from './InputBox';
-import SendIcon from '@mui/icons-material/Send';
 
 function App() {
   return (

@@ -6,11 +6,11 @@
     --color-bg: #242424;
     --color-input-bg: #1f1f1f;
     --color-font: rgba(255, 255, 255, 0.87);
-    --color-send-btn-bg: green;
-    --color-input: #51585c;
+    --color-send-btn-bg: #fff;
+    --color-input: #fff;
+    --color-input-border: rgba(155, 155, 155, 0.2);
     /* Light mode */
     --light-color-font: #213547;
-    --light-color-bg: #ffffff;
 }
 body {
   margin: 0;

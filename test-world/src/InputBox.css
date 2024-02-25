@@ -4,7 +4,6 @@
     align-items: center;
     width: 100%;
     height: 60px;
-    background-color: var(--color-input-bg);
 }
 @media (max-width: 1000px) {
     .input-area {
@@ -38,6 +37,8 @@
     min-height: 38px;
     resize: none;
     overflow-y: hidden;
+    background-color: transparent;
+    border: 0.1px solid var(--color-input-border);
 }
 .send-btn {
     cursor: pointer;
@@ -47,4 +48,5 @@
     border-radius: 4px;
     padding: 3.3px;
     z-index: 1;
+    color: #000;
 }

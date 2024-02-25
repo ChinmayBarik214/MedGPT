@@ -18,16 +18,6 @@
     position: relative;
     height: 60px;
 }
-.send-btn {
-    cursor: pointer;
-    font-size: 37.5px;
-    background-color: var(--color-send-btn-bg);
-    align-self: flex-end;
-    margin-left: calc(-37.5px);
-    border-radius: 8px;
-    padding: 8px;
-    z-index: 1;
-}
 .texttype {
     position: absolute;
     bottom: 10px;

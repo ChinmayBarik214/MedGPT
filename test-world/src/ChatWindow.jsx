@@ -4,7 +4,7 @@ import './ChatWindow.css';
 
 function ChatWindow() {
   return (
-    <div className='msgs-container'>
+    <div>
         {/* Header (60px height ChatWindow.css line 19:25) */}
         {/* msg-boxes */}
         <div className='chat-box'>
